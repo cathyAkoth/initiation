@@ -4,7 +4,7 @@
  import './Dropdown.css';
 
  function Dropdown(){
-    const [click,setCick] = useState(false)
+    const [click,setClick] = useState(false)
 
     const handleClick =()=> setClick(click)
 
