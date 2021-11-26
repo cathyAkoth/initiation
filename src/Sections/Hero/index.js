@@ -1,8 +1,8 @@
 import styled, { keyframes } from "styled-components";
 
-import pinkBlob from "../../assets/yellowblob.png";
-import purpleBlob from "../../assets/blob purple.png";
-import whiteBlob from "../../assets/blob white.png";
+// import pinkBlob from "../../assets/yellowblob.png";
+// import purpleBlob from "../../assets/blob purple.png";
+// import whiteBlob from "../../assets/blob white.png";
 import arrow from "../../assets/Arrow Right.svg";
 import Mobile from "../../assets/mobile.svg";
 
@@ -15,7 +15,7 @@ const move = keyframes`
 const HomeSection = styled.section`
   width: 100vw;
   height: 45vw;
-  background-color: #09009b;
+  background-color: #150485;
   /* background-color: #0a0b10; */
   display: flex;
   justify-content: center;
@@ -39,25 +39,25 @@ const Blobs = styled.div`
   }
 `;
 
-const PinkBlob = styled.div`
-  width: calc(15% + 15vw);
-  position: absolute;
-  right: 0;
-  top: calc(5rem + 5vw);
-  z-index: 6;
-`;
-const PurpleBlob = styled.div`
-  width: calc(10% + 10vw);
-  position: absolute;
-  right: 0;
-`;
-const WhiteBlob = styled.div`
-  width: calc(20% + 20vw);
-  position: absolute;
-  right: calc(3.5rem + 3.5vw);
-  top: calc(2rem + 2vw);
-  z-index: 5;
-`;
+// const PinkBlob = styled.div`
+//   width: calc(15% + 15vw);
+//   position: absolute;
+//   right: 0;
+//   top: calc(5rem + 5vw);
+//   z-index: 6;
+// `;
+// const PurpleBlob = styled.div`
+//   width: calc(10% + 10vw);
+//   position: absolute;
+//   right: 0;
+// `;
+// const WhiteBlob = styled.div`
+//   width: calc(20% + 20vw);
+//   position: absolute;
+//   right: calc(3.5rem + 3.5vw);
+//   top: calc(2rem + 2vw);
+//   z-index: 5;
+// `;
 
 const MainContent = styled.div`
   display: flex;
@@ -138,6 +138,10 @@ const Title = styled.h1`
   font-size: calc(2rem + 1vw);
   line-height: 1.2;
   padding: 0.5rem 0;
+  color: white;
+  span{
+    color:#FFF323;
+  }
 `;
 
 const SubText = styled.h5`
@@ -146,7 +150,7 @@ const SubText = styled.h5`
 `;
 
 const CTA = styled.button`
-  background-color: var(--white);
+  background-color: #FFF323;
   color: #0a0b10;
   padding: 0.5rem 1rem;
   margin-top: 1rem;
@@ -174,7 +178,7 @@ const CTA = styled.button`
 const HeroSection = () => {
   return (
     <HomeSection id="home">
-      <Blobs>
+      {/* <Blobs>
         <PinkBlob>
           <img src={pinkBlob} alt="" width="400" height="400" />{" "} 
         </PinkBlob>
@@ -184,8 +188,8 @@ const HeroSection = () => {
         <PurpleBlob>
           <img src={purpleBlob} alt="" width="400" height="400" />
         </PurpleBlob>
-      </Blobs>
-
+      </Blobs> */}
+      
       <MainContent id="home">
         <Lb id="leftBlock">
           <Topic>
@@ -193,7 +197,7 @@ const HeroSection = () => {
             <span>We Build Web</span>
             
           </Topic>
-          <Title>Transforming your digital presence</Title>
+          <Title>CHANGING THE WORLD THROUGH<span> TECH SOLUTIONS </span>ONE STEP AT A TIME</Title>
           <SubText>
             we help fast growing companies build award winning websites
           </SubText>
