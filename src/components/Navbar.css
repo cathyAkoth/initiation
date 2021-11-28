@@ -49,10 +49,10 @@
 
 .nav-links:hover {
   /* background: #FFCA03; */
-  border-bottom: 2px solid #FFCA03;
+  border-bottom: 5px solid #FFCA03;
   transition: width 0.5s;
   border-radius: 4px;
-  /* height: 5px; */
+ 
   /* transition: all 0.2s ease-out; */
   
 }

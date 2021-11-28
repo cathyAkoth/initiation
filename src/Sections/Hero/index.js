@@ -4,7 +4,7 @@ import styled, { keyframes } from "styled-components";
 // import purpleBlob from "../../assets/blob purple.png";
 // import whiteBlob from "../../assets/blob white.png";
 import arrow from "../../assets/Arrow Right.svg";
-import Mobile from "../../assets/mobile.svg";
+import Mobile from "../../images/world.jpg";
 
 const move = keyframes`
 0% { transform: translateY(-5px)  }
@@ -61,8 +61,8 @@ const Blobs = styled.div`
 
 const MainContent = styled.div`
   display: flex;
-  justify-content: center;
-  align-items: center;
+   justify-content: center;
+   align-items: center;  
   width: 70vw;
   @media only Screen and (max-width: 48em) {
     flex-direction: column;
@@ -97,11 +97,11 @@ const Lb = styled.div`
   width: 50%;
   line-height: 1.5;
   color: var(--white);
-  position: relative;
+  position: relative; 
   z-index: 15;
   @media only Screen and (max-width: 48em) {
     width: 80%;
-    text-align: center;
+    text-align: center; 
     align-items: center;
     justify-content: space-around;
     margin-top: calc(2.5rem + 2.5vw);
@@ -120,7 +120,7 @@ const Topic = styled.span`
   color: var(--white);
   font-weight: 700;
   font-size: calc(0.4rem + 0.4vw);
-  padding: 0.5rem 1rem;
+   padding: 0.5rem 1rem; 
   border-radius: 20px;
  
 `;
@@ -135,18 +135,19 @@ const Circle = styled.span`
 `;
 
 const Title = styled.h1`
-  font-size: calc(2rem + 1vw);
+  font-size: calc(2.5rem + 1vw);
   line-height: 1.2;
   padding: 0.5rem 0;
   color: white;
   span{
     color:#FFF323;
+    
   }
 `;
 
 const SubText = styled.h5`
-  font-size: calc(0.5rem + 0.5vw);
-  color: var(--nav2);
+  font-size: calc(1.5rem + 0.5vw);
+  color: white;
 `;
 
 const CTA = styled.button`
@@ -156,6 +157,7 @@ const CTA = styled.button`
   margin-top: 1rem;
   border-radius: 20px;
   cursor: pointer;
+
   font-size: calc(0.5rem + 0.5vw);
   font-weight: 700;
   display: flex;
@@ -199,7 +201,7 @@ const HeroSection = () => {
           </Topic>
           <Title>CHANGING THE WORLD THROUGH<span> TECH SOLUTIONS </span>ONE STEP AT A TIME</Title>
           <SubText>
-            we help fast growing companies build award winning websites
+            We aim at being the best in tranfroming the tech space through services tailored for individual needs.
           </SubText>
           <CTA>
             Get in touch &nbsp;
